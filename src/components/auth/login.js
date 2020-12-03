@@ -3,10 +3,9 @@ import { useDispatch, connect } from 'react-redux';
 import { Row, Col, Container, Button } from 'react-bootstrap';
 import Form from 'react-bootstrap/Form';
 import { useHistory } from 'react-router-dom';
-import * as ROUTES from '../../routes/routes';
+import * as ROUTES from './routes/routes';
 import firebase from '../../firebase';
-import { receiveUser } from '../../reducers/authReducer';
-import LoginErrors from '../Errors/LoginErrors';
+import { receiveUser } from '../reducers/authReducer';
 
 const Login = ({ isAuthed }) => {
   const [credentials, setCredentials] = useState({ email: '', password: '' });
