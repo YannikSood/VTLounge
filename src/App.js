@@ -7,28 +7,31 @@ import {
 } from 'react-router-dom'; //For routing
 
 import Navigation from './components/NavBar'; //Navigation bar
-import * as ROUTES from './routes/routes'; //All routing done here, then established in app.js
+import * as ROUTES from './components/routes/routes'; //All routing done here, then established in app.js
+import Login from './components/auth/login.js'
+import { receiveUser, clearUser } from './reducers/authReducer';
+import firebase from './firebase.js';
 
 const App = () => {
 
   //Unused but possibly usable hooks here --------------------------------
-  // const dispatch = useDispatch();
+  const dispatch = useDispatch();
   // const [isLoading, setIsLoading] = useState(true);
 
   //Make sure a user is logged in here --------------------------------
-  // useEffect(() => {
-  //   firebase.auth().onAuthStateChanged((user) => {
-  //     if (user) {
-  //       // User is signed in.
-  //       setIsLoading(false);
-  //       dispatch(receiveUser(user));
-  //     } else {
-  //       // No user is signed in.
-  //       setIsLoading(false);
-  //       dispatch(clearUser());
-  //     }
-  //   });
-  // }, [dispatch]);
+  useEffect(() => {
+    firebase.auth().onAuthStateChanged((user) => {
+      if (user) {
+        // User is signed in.
+        // setIsLoading(false);
+        dispatch(receiveUser(user));
+      } else {
+        // No user is signed in.
+        // setIsLoading(false);
+        dispatch(clearUser());
+      }
+    });
+  }, [dispatch]);
 
   //Connect the server to the frontend here, fill out target url --------------------------------
   // Axios({
@@ -53,7 +56,7 @@ const App = () => {
                     </Route>
 
                     <Route path={ROUTES.LOGIN}>
-                      {/* Add some components here */}
+                      <Login />
                     </Route>
 
                     <Route path={ROUTES.LOGOUT}>

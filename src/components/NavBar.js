@@ -1,7 +1,7 @@
 import React from 'react';
 import { useHistory, withRouter } from 'react-router-dom';
 import { Navbar, Nav, Button, Dropdown, DropdownButton } from 'react-bootstrap';
-import * as ROUTES from '../routes/routes';
+import * as ROUTES from './routes/routes';
 
 
 //How you display a different nav bar if someone is logged in or logged out
@@ -65,8 +65,8 @@ const Navigation = (location) => {
 
 
             {/* Single button example. Push the path instead of route here */}
-            <Button class="ml-2" onClick={() => history.push("/ADD ROUTE")} variant="outline-light">
-                ADD ROUTE
+            <Button class="ml-2" onClick={() => history.push("/LOGIN")} variant="outline-light">
+                LOGIN
             </Button>
 
 
