@@ -11,7 +11,7 @@ class HelpContainer extends React.Component {
              <div className = "titleBox">
                  <div className = "title">Need Help?</div>
                  <Form>
-                     <Form.Control type = "search" placeholder = "Search Here"> </Form.Control>
+                     <Form.Control type = "search" placeholder = "Search Here" />
                  </Form>
 
              </div>
