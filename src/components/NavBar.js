@@ -25,7 +25,7 @@ const Navigation = (location) => {
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav activeKey={location.pathname}>
 
-          <DropdownButton
+        <DropdownButton
             className="ml-2"
             title="OPTION 1"
             // size="md"
@@ -90,6 +90,7 @@ const Navigation = (location) => {
 
 //Implement this once auth is done
 // const NavigationNonAuth = (location) => {
+//   const history = useHistory();
 //   return (
 //     <Navbar
 //       collapseOnSelect
@@ -100,25 +101,34 @@ const Navigation = (location) => {
 //       fixed="top"
 //     >
 //       <Navbar.Brand href={"/"}>VT Lounge</Navbar.Brand>
-//       {/* <Navbar.Toggle aria-controls="responsive-navbar-nav" /> */}
-//       {/* <Navbar.Collapse id="responsive-navbar-nav"> */}
-//         {/* <Nav activeKey={location.pathname}> */}
-//           {/* <Nav.Link className="nav-link" href={`${ROUTES.ADD ROUTE}`}>ADD ROUTE</Nav.Link>
-//           <Nav.Link className="nav-link" href={`${ROUTES.ADD ROUTE}`}>
-//             ADD ROUTE
-//           </Nav.Link>
-//           <Nav.Link className="nav-link" href={`${ROUTES.ADD ROUTE}`}>ADD ROUTE </Nav.Link>
-//           <Nav.Link className="nav-link" href={`${ROUTES.ADD ROUTE}`}>ADD ROUTE </Nav.Link>
-//           <Nav.Link className="nav-link" href={`${ROUTES.ADD ROUTE}`}>ADD ROUTE </Nav.Link>
-//           <Nav.Link className="nav-link" href={`${ROUTES.ADD ROUTE}`}>ADD ROUTE</Nav.Link>
-//           {/* <Nav.Link className="nav-link" to={ROUTES.ADD ROUTE}>ADD ROUTE </Nav.Link> */}
-//         {/* </Nav> */}
-//       {/* </Navbar.Collapse> */}
-//       {/* <NavLink to={ROUTES.LOGIN}>
-//         <Button className="ml-2" variant="primary">
-//           Log In / Sign Up
-//         </Button>
-//       </NavLink> */}
+//       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+//       <Navbar.Collapse id="responsive-navbar-nav">
+//         <Nav activeKey={location.pathname}>
+//         <DropdownButton
+//             className="ml-2"
+//             title="OPTION 1"
+//             // size="md"
+//             variant="light"
+//           >
+//             <Dropdown.Item href={`${ROUTES.OptionalRoute}`}>
+//               Optional name
+//             </Dropdown.Item>
+            
+//             <Dropdown.Divider />
+
+//             <Dropdown.Item href={`${ROUTES.OptionalRoute}`}>
+//               Optional name
+//             </Dropdown.Item>
+          
+            
+//           </DropdownButton>
+          
+//           <Button class="ml-2" onClick={() => history.push("/login")} variant="outline-light">
+//                 LOGIN
+//           </Button>
+//         </Nav>
+//       </Navbar.Collapse>
+     
 //     </Navbar>
 //   )
 // };

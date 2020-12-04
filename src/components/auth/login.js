@@ -40,7 +40,7 @@ const Login = ({ isAuthed }) => {
 
         <Row>
           <Col>
-            <h1>Login to access the full platform.</h1>
+            <h1>Login to access VT Lounge</h1>
           </Col>
         </Row>
 
@@ -53,9 +53,6 @@ const Login = ({ isAuthed }) => {
               <Form.Group controlId="formBasicEmail">
                 <Form.Label>Email address</Form.Label>
                 <Form.Control name="email" type="email" placeholder="Enter email" onChange={handleChange} value={credentials.email} />
-                <Form.Text className="text-muted">
-                  We&apos;ll never share your email with anyone else.
-                </Form.Text>
               </Form.Group>
 
               <Form.Group controlId="formBasicPassword">
@@ -83,4 +80,5 @@ const mapStateToProps = (state) => {
     isAuthed: auth.isAuthed,
   };
 };
+
 export default connect(mapStateToProps)(Login);
