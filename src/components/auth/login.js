@@ -71,22 +71,6 @@ const Login = ({ isAuthed }) => {
           </Col>
         </Row>
 
-        <Row>
-          <Col>
-
-            <Button href={ROUTES.REGISTER} variant="secondary">New User? Register Here</Button>
-
-          </Col>
-        </Row>
-
-        <Row>
-          <Col>
-
-            <Button href={ROUTES.FORGOT_PASSWORD} variant="link">Forgot Password</Button>
-
-          </Col>
-        </Row>
-
       </Container>
     </Fragment>
 
