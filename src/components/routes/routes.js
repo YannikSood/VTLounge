@@ -5,5 +5,5 @@ export const PROFILE = '/profile';
 export const CLASSLOUNGES = '/classLounges';
 export const MAJORLOUNGES = '/majorLounges';
 export const SOCIALLOUNGES = '/socialLounges';
-export const HELP = '/Help';
+export const HELP = '/help';
 export const OptionalRoute = '/randomOptionalRoute';

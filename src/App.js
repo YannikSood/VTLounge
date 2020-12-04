@@ -13,6 +13,7 @@ import { receiveUser, clearUser } from './components/reducers/authReducer';
 import firebase from './firebase.js';
 import { store, persistor } from './components/store';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import HelpContainer from './components/HelpContainer';
 
 const App = () => {
 
@@ -80,6 +81,10 @@ const App = () => {
 
                     <Route path={ROUTES.SOCIALLOUNGES}>
                       {/* Add some components here */}
+                    </Route>
+
+                    <Route path={ROUTES.HELP}>
+                      <HelpContainer/>
                     </Route>
 
                 </Switch>
