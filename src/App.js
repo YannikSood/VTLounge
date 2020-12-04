@@ -12,6 +12,7 @@ import Login from './components/auth/login.js'
 import { receiveUser, clearUser } from './components/reducers/authReducer';
 import firebase from './firebase.js';
 import { store, persistor } from './components/store';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const App = () => {
 
@@ -65,13 +66,6 @@ const App = () => {
                       {/* Add some components here */}
                     </Route>
 
-                    <Route path={ROUTES.REGISTER}>
-                      {/* Add some components here */}
-                    </Route>
-
-                    <Route path={ROUTES.FORGOT_PASSWORD}>
-                      {/* Add some components here */}
-                    </Route>
                 </Switch>
               </div>
           </Fragment>

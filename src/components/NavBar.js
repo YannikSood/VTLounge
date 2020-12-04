@@ -65,7 +65,7 @@ const Navigation = (location) => {
 
 
             {/* Single button example. Push the path instead of route here */}
-            <Button class="ml-2" onClick={() => history.push("/LOGIN")} variant="outline-light">
+            <Button class="ml-2" onClick={() => history.push("/login")} variant="outline-light">
                 LOGIN
             </Button>
 
