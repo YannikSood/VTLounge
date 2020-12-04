@@ -5,12 +5,13 @@ import {
   Route,
   Switch,
 } from 'react-router-dom'; //For routing
-
+import { Provider, useDispatch } from 'react-redux';
 import Navigation from './components/NavBar'; //Navigation bar
 import * as ROUTES from './components/routes/routes'; //All routing done here, then established in app.js
 import Login from './components/auth/login.js'
-import { receiveUser, clearUser } from './reducers/authReducer';
+import { receiveUser, clearUser } from './components/reducers/authReducer';
 import firebase from './firebase.js';
+import { store, persistor } from './components/store';
 
 const App = () => {
 
@@ -46,6 +47,7 @@ const App = () => {
 
 
   return (
+    <Provider store={store}>
     <Router>
           <Fragment>
             <Navigation />
@@ -74,6 +76,7 @@ const App = () => {
               </div>
           </Fragment>
         </Router>
+    </Provider>
   );
 }
 
