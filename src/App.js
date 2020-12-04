@@ -66,6 +66,22 @@ const App = () => {
                       {/* Add some components here */}
                     </Route>
 
+                    <Route path={ROUTES.PROFILE}>
+                      {/* Add some components here */}
+                    </Route>
+
+                    <Route path={ROUTES.CLASSLOUNGES}>
+                      {/* Add some components here */}
+                    </Route>
+
+                    <Route path={ROUTES.MAJORLOUNGES}>
+                      {/* Add some components here */}
+                    </Route>
+
+                    <Route path={ROUTES.SOCIALLOUNGES}>
+                      {/* Add some components here */}
+                    </Route>
+
                 </Switch>
               </div>
           </Fragment>

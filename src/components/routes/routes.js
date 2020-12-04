@@ -1,4 +1,9 @@
 export const DASHBOARD = '/market';
 export const LOGIN = '/login';
 export const LOGOUT = '/logout';
+export const PROFILE = '/profile';
+export const CLASSLOUNGES = '/classLounges';
+export const MAJORLOUNGES = '/majorLounges';
+export const SOCIALLOUNGES = '/socialLounges';
+export const HELP = '/Help';
 export const OptionalRoute = '/randomOptionalRoute';

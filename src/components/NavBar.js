@@ -27,41 +27,47 @@ const Navigation = (location) => {
 
         <DropdownButton
             className="ml-2"
-            title="OPTION 1"
+            title="Menu"
             // size="md"
             variant="light"
           >
-            <Dropdown.Item href={`${ROUTES.OptionalRoute}`}>
-              Optional name
+            <Dropdown.Item href={`${ROUTES.DASHBOARD}`}>
+              Dashboard
             </Dropdown.Item>
             
             <Dropdown.Divider />
 
-            <Dropdown.Item href={`${ROUTES.OptionalRoute}`}>
-              Optional name
+            <Dropdown.Item href={`${ROUTES.PROFILE}`}>
+              Profile
+            </Dropdown.Item>
+
+            <Dropdown.Divider />
+
+            <Dropdown.Item href={`${ROUTES.CLASSLOUNGES}`}>
+              Class Lounges
+            </Dropdown.Item>
+
+            <Dropdown.Divider />
+
+            <Dropdown.Item href={`${ROUTES.MAJORLOUNGES}`}>
+              Major Lounges
+            </Dropdown.Item>
+
+            <Dropdown.Divider />
+
+            <Dropdown.Item href={`${ROUTES.SOCIALLOUNGES}`}>
+              Social Lounges
+            </Dropdown.Item>
+
+            <Dropdown.Divider />
+
+            <Dropdown.Item href={`${ROUTES.HELP}`}>
+              Help
             </Dropdown.Item>
           
             
           </DropdownButton>
 
-          <DropdownButton
-            className="ml-2"
-            title="OPTION 2"
-            // size="md"
-            variant="light"
-          >
-            <Dropdown.Item href={`${ROUTES.OptionalRoute}`}>
-              Optional name
-            </Dropdown.Item>
-            
-            <Dropdown.Divider />
-
-            <Dropdown.Item href={`${ROUTES.OptionalRoute}`}>
-              Optional name
-            </Dropdown.Item>
-          
-            
-          </DropdownButton>
 
 
             {/* Single button example. Push the path instead of route here */}
