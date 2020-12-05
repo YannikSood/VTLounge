@@ -14,6 +14,7 @@ import firebase from './firebase.js';
 import { store, persistor } from './components/store';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import HelpContainer from './components/HelpContainer';
+import ProfileContainer from './components/ProfileContainer';
 
 const App = () => {
 
@@ -68,7 +69,7 @@ const App = () => {
                     </Route>
 
                     <Route path={ROUTES.PROFILE}>
-                      {/* Add some components here */}
+                      <ProfileContainer/>
                     </Route>
 
                     <Route path={ROUTES.CLASSLOUNGES}>
