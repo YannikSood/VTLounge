@@ -15,6 +15,10 @@ import { store, persistor } from './components/store';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import HelpContainer from './components/HelpContainer';
 import ProfileContainer from './components/ProfileContainer';
+import ClassLoungesContainer from './components/ClassLoungesContainer';
+import SocialLoungesContainer from './components/SocialLoungesContainer';
+import MajorLoungesContainer from './components/MajorLoungesContainer';
+
 
 const App = () => {
 
@@ -73,15 +77,15 @@ const App = () => {
                     </Route>
 
                     <Route path={ROUTES.CLASSLOUNGES}>
-                      {/* Add some components here */}
+                      <ClassLoungesContainer/>
                     </Route>
 
                     <Route path={ROUTES.MAJORLOUNGES}>
-                      {/* Add some components here */}
+                      <MajorLoungesContainer/>
                     </Route>
 
                     <Route path={ROUTES.SOCIALLOUNGES}>
-                      {/* Add some components here */}
+                      <SocialLoungesContainer/>
                     </Route>
 
                     <Route path={ROUTES.HELP}>
