@@ -15,7 +15,7 @@ const Login = ({ isAuthed }) => {
   const history = useHistory();
 
   useEffect(() => {
-    if (isAuthed) history.push('/');
+    if (isAuthed) history.push('/dashboard');
   }, [isAuthed, history]);
 
   const handleChange = (e) => {

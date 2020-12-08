@@ -14,23 +14,24 @@ import firebase from './firebase.js';
 import { store, persistor } from './components/store';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import HelpContainer from './components/HelpContainer';
+import Dashboard from './components/dashboard';
 
 const App = () => {
 
   //Unused but possibly usable hooks here --------------------------------
   const dispatch = useDispatch();
-  // const [isLoading, setIsLoading] = useState(true);
+  const [isAuthed, setIsAuthed] = useState(false);
 
   //Make sure a user is logged in here --------------------------------
   useEffect(() => {
     firebase.auth().onAuthStateChanged((user) => {
       if (user) {
         // User is signed in.
-        // setIsLoading(false);
+        setIsAuthed(true);
         dispatch(receiveUser(user));
       } else {
         // No user is signed in.
-        // setIsLoading(false);
+        setIsAuthed(false);
         dispatch(clearUser());
       }
     });
@@ -52,11 +53,11 @@ const App = () => {
     <Provider store={store}>
     <Router>
           <Fragment>
-            <Navigation />
+            <Navigation isAuthed = {isAuthed}/>
               <div className="app__wrapper">
                 <Switch>
                     <Route exact path={ROUTES.DASHBOARD}>
-                      {/* Add some components here */}
+                      <Dashboard />
                     </Route>
 
                     <Route path={ROUTES.LOGIN}>
