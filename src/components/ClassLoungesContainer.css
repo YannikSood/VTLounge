@@ -1,0 +1,42 @@
+
+
+.headerBar {
+    display: flex;
+    background-color: #e8af54;
+    font-size: xx-large;
+    font-weight: bold;
+    color: #861F41;
+    height: 60px;
+    align-content: center;
+    text-align: center;
+    
+}
+
+.announcementsHeader {
+    color: black;
+    font-size: large;
+    font-weight: bold;
+    border: 5px solid;
+    border-color: grey;
+    padding: 5px;
+}
+
+.accordion {
+    border: 3px solid;
+    border-color: grey;
+}
+
+.aCourse{
+    font-size: medium;
+    font-weight: bold;
+    color: black;
+}
+
+.aDate{
+    font-size: small;
+    color: #636466;
+}
+
+.gap{
+    height: 30px;
+}

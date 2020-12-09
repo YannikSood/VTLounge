@@ -19,6 +19,7 @@ import ProfileContainer from './components/ProfileContainer';
 import ClassLoungesContainer from './components/ClassLoungesContainer';
 import SocialLoungesContainer from './components/SocialLoungesContainer';
 import MajorLoungesContainer from './components/MajorLoungesContainer';
+import Class2114Container from './components/Class2114Container';
 
 
 const App = () => {
@@ -91,6 +92,10 @@ const App = () => {
 
                     <Route path={ROUTES.HELP}>
                       <HelpContainer/>
+                    </Route>
+
+                    <Route path={ROUTES.CLASSLOUNGE2114}>
+                      <Class2114Container/>
                     </Route>
 
                 </Switch>
