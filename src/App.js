@@ -14,7 +14,15 @@ import firebase from './firebase.js';
 import { store, persistor } from './components/store';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import HelpContainer from './components/HelpContainer';
+<<<<<<< HEAD
 import Dashboard from './components/dashboard';
+=======
+import ProfileContainer from './components/ProfileContainer';
+import ClassLoungesContainer from './components/ClassLoungesContainer';
+import SocialLoungesContainer from './components/SocialLoungesContainer';
+import MajorLoungesContainer from './components/MajorLoungesContainer';
+
+>>>>>>> 7d450c1920b39caabc9dfe7c6a07be5cbacac73a
 
 const App = () => {
 
@@ -69,19 +77,19 @@ const App = () => {
                     </Route>
 
                     <Route path={ROUTES.PROFILE}>
-                      {/* Add some components here */}
+                      <ProfileContainer/>
                     </Route>
 
                     <Route path={ROUTES.CLASSLOUNGES}>
-                      {/* Add some components here */}
+                      <ClassLoungesContainer/>
                     </Route>
 
                     <Route path={ROUTES.MAJORLOUNGES}>
-                      {/* Add some components here */}
+                      <MajorLoungesContainer/>
                     </Route>
 
                     <Route path={ROUTES.SOCIALLOUNGES}>
-                      {/* Add some components here */}
+                      <SocialLoungesContainer/>
                     </Route>
 
                     <Route path={ROUTES.HELP}>

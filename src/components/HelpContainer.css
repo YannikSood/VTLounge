@@ -1,3 +1,24 @@
 .titleBox {
-    background-color: orange;
+    background-color: #e8af54;
+    height: 60px;
+}
+
+.title {
+    font-size: xx-large;
+    color:#861F41;
+    font-weight: bold;
+}
+
+.searchBox {
+    margin: auto;
+}
+
+.card {
+    color: black;
+    font-size: medium;
+}
+
+.cardQuestion{
+    font-size: large;
+    text-decoration: underline;
 }
